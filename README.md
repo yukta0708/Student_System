@@ -1,59 +1,64 @@
 QR Code Generator and QR Code Scanning Attendance System
-Project Description
+Project Overview
 
-The QR Code Generator and Attendance System is a web-based application designed to automate attendance tracking using QR codes. The system reduces manual effort, improves accuracy, and provides real-time data management for students, teachers, and parents.
+The QR Code Generator and QR Code Scanning Attendance System is a web-based application developed to automate the attendance process using QR codes. The system helps educational institutions efficiently manage student attendance, assignments, leave applications, and performance records.
 
-This project helps educational institutions manage attendance, assignments, leave applications, and performance records efficiently.
+Traditional attendance methods are time-consuming and prone to errors. This project solves that problem by providing a fast, secure, and accurate QR-based attendance system with real-time data management.
 
+Key Features
 
-Features
 Student Panel
-QR Code Generation for each student
-QR Code Scanning for attendance
-View results and performance reports
+Unique QR code generated for each student
+Scan QR code to mark attendance
+View attendance records
 Submit assignments online
 Apply for leave digitally
-Get notifications for updates
+View academic performance and reports
+Get notifications for assignments and updates
 
 Teacher Panel
-Mark attendance using QR scanner
+Mark attendance using QR code scanner
 Add and manage student details
-Approve or reject leave requests
+Approve or reject leave applications
 Generate attendance reports
-View parent feedback
+View student performance reports
+Provide feedback
 Manage assignments
 
 Parent Panel
-Track child attendance in real time
-Receive absence notifications
-View academic performance
-Submit leave request for child
+Monitor student attendance in real time
+Receive notifications for absence or late attendance
+View student academic performance
+Submit leave requests for child
 Communicate with teachers
-Manage profile details
+Manage profile information
 
 Objectives
 Automate attendance process
-Reduce manual errors in attendance
+Reduce manual work
 Save time for teachers and students
+Improve accuracy of attendance records
 Provide real-time attendance tracking
-Improve communication between teachers, students, and parents
-Store data securely using database
+Improve communication between students, teachers, and parents
+Store data securely in database
 
 Scope of Project
 Designed for schools, colleges, and universities
-Provides fast QR-based attendance marking
-Enables leave management system
-Provides performance reports
-Improves communication between parents and teachers
+Fast QR-based attendance marking system
+Digital leave management system
+Performance and attendance report generation
+Parent-teacher communication support
+Secure data storage
 
 Advantages
 Eliminates manual attendance process
 Reduces human errors
-Saves time using QR scan
-Secure and encrypted QR codes
+Saves time using QR scanning
 Prevents fake attendance marking
-Allows parental monitoring
-Provides accurate database records
+Secure and encrypted QR codes
+Accurate record keeping
+Easy report generation
+Improves communication between teachers and parents
 
 Technologies Used
 Frontend
@@ -61,52 +66,61 @@ HTML
 CSS
 JavaScript
 Backend
-Java (Servlets)
+Java (Servlets, JSP)
 Database
 MySQL
-Tools
+
+Tools & Software
 Eclipse IDE
 Apache Tomcat 9
 MySQL Workbench
 JDK 8
-
 System Architecture
 
 The system follows a 3-tier architecture:
 
 Presentation Layer (Frontend)
-HTML, CSS, JavaScript for UI
-Application Layer (Backend)
-Java Servlets handle logic and requests
-Database Layer
-MySQL database stores student, teacher, attendance, and assignment data
-Modules
 
+User interface developed using HTML, CSS, and JavaScript.
+
+Application Layer (Backend)
+
+Java Servlets handle application logic, request processing, and communication between frontend and database.
+
+Database Layer
+
+MySQL database stores student details, attendance records, assignments, leave data, and user information.
+
+Modules
 QR Code Module
 Generates unique QR code for each student
-Links QR code with student ID
+QR code linked with student ID
 Secure QR code validation
 
 Attendance Module
 Scan QR code to mark attendance
-Stores attendance data automatically
-Prevents duplicate attendance entries
-Assignment Module
+Automatic attendance record storage
+Prevent duplicate attendance
 
-Upload and submit assignments
+Assignment Module
+Students submit assignments online
+Teachers upload assignments
 Notification for deadlines
+
 Leave Management Module
 Students apply leave online
-Teachers approve or reject leave
+Teachers approve or reject leave request
+Leave status tracking
+
 Report Module
-
 Attendance report generation
-Performance report
-Summary report
-Database
+Performance report generation
+Summary reports
+Database Information
 
-Database schema includes tables:
+Database Name: student-system
 
+Tables included:
 students
 teachers
 parents
@@ -114,26 +128,26 @@ attendance
 assignments
 leave_requests
 
-Database name: student-system
-
-Installation Steps
-
-Install JDK 8
-Install Eclipse IDE
-Install Apache Tomcat 9
-Install MySQL Workbench
+Installation and Setup
+Requirements
+JDK 8
+Eclipse IDE
+Apache Tomcat 9
+MySQL Workbench
 Steps to Run Project
-Import project in Eclipse
+Import project in Eclipse IDE
 Configure Apache Tomcat 9 server
-Import database in MySQL Workbench
-Update database username and password in project
+Create database in MySQL Workbench
+Import database tables
+Update database username and password in project files
 
-Run project on server
-Open browser:
+Run project on Tomcat server
+Open browser and run:
 http://localhost:8080/project-name
+
 Future Enhancements
-Mobile app integration
-Face recognition attendance
-Cloud database support
-SMS or Email notifications
-Advanced analytics dashboard
+Mobile application support
+Face recognition attendance system
+Cloud database integration
+Email and SMS notification system
+Advanced dashboard with analytics
