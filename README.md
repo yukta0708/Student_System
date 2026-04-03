@@ -1,153 +1,143 @@
-QR Code Generator and QR Code Scanning Attendance System
-Project Overview
+# QR Code Generator and QR Code Scanning Attendance System
 
-The QR Code Generator and QR Code Scanning Attendance System is a web-based application developed to automate the attendance process using QR codes. The system helps educational institutions efficiently manage student attendance, assignments, leave applications, and performance records.
+## Introduction
+The QR Code Generator and QR Code Scanning Attendance System is a web-based application designed to automate the attendance process using QR codes.
 
-Traditional attendance methods are time-consuming and prone to errors. This project solves that problem by providing a fast, secure, and accurate QR-based attendance system with real-time data management.
+The system helps educational institutions efficiently manage student attendance, assignments, leave applications, and performance records.
 
-Key Features
+Traditional attendance methods are time-consuming and prone to errors. This project provides a fast, secure, and accurate QR-based attendance system with real-time data management.
 
-Student Panel
-Unique QR code generated for each student
-Scan QR code to mark attendance
-View attendance records
-Submit assignments online
-Apply for leave digitally
-View academic performance and reports
-Get notifications for assignments and updates
 
-Teacher Panel
-Mark attendance using QR code scanner
-Add and manage student details
-Approve or reject leave applications
-Generate attendance reports
-View student performance reports
-Provide feedback
-Manage assignments
+## Key Features
 
-Parent Panel
-Monitor student attendance in real time
-Receive notifications for absence or late attendance
-View student academic performance
-Submit leave requests for child
-Communicate with teachers
-Manage profile information
+### Student Panel
+- Unique QR code generated for each student
+- Scan QR code to mark attendance
+- View attendance records
+- Submit assignments online
+- Apply for leave digitally
+- View academic performance and reports
+- Get notifications for assignments and updates
 
-Objectives
-Automate attendance process
-Reduce manual work
-Save time for teachers and students
-Improve accuracy of attendance records
-Provide real-time attendance tracking
-Improve communication between students, teachers, and parents
-Store data securely in database
 
-Scope of Project
-Designed for schools, colleges, and universities
-Fast QR-based attendance marking system
-Digital leave management system
-Performance and attendance report generation
-Parent-teacher communication support
-Secure data storage
+### Teacher Panel
+- Mark attendance using QR code scanner
+- Add and manage student details
+- Approve or reject leave applications
+- Generate attendance reports
+- View student performance reports
+- Provide feedback
+- Manage assignments
 
-Advantages
-Eliminates manual attendance process
-Reduces human errors
-Saves time using QR scanning
-Prevents fake attendance marking
-Secure and encrypted QR codes
-Accurate record keeping
-Easy report generation
-Improves communication between teachers and parents
 
-Technologies Used
-Frontend
-HTML
-CSS
-JavaScript
-Backend
-Java (Servlets, JSP)
-Database
-MySQL
+### Parent Panel
+- Monitor student attendance in real time
+- Receive notifications for absence or late attendance
+- View student academic performance
+- Submit leave requests for child
+- Communicate with teachers
+- Manage profile information
 
-Tools & Software
-Eclipse IDE
-Apache Tomcat 9
-MySQL Workbench
-JDK 8
-System Architecture
 
-The system follows a 3-tier architecture:
+## Objectives
+- Automate attendance process
+- Reduce manual work
+- Save time for teachers and students
+- Improve accuracy of attendance records
+- Provide real-time attendance tracking
+- Improve communication between students, teachers, and parents
+- Store data securely in database
 
-Presentation Layer (Frontend)
 
-User interface developed using HTML, CSS, and JavaScript.
+## Scope of Project
+- Designed for schools, colleges, and universities
+- Fast QR-based attendance marking system
+- Digital leave management system
+- Performance and attendance report generation
+- Parent-teacher communication support
+- Secure data storage
 
-Application Layer (Backend)
 
-Java Servlets handle application logic, request processing, and communication between frontend and database.
+## Advantages
+- Eliminates manual attendance process
+- Reduces human errors
+- Saves time using QR scanning
+- Prevents fake attendance marking
+- Secure and encrypted QR codes
+- Accurate record keeping
+- Easy report generation
+- Improves communication between teachers and parents
 
-Database Layer
 
-MySQL database stores student details, attendance records, assignments, leave data, and user information.
+## Technologies Used
 
-Modules
-QR Code Module
-Generates unique QR code for each student
-QR code linked with student ID
-Secure QR code validation
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
-Attendance Module
-Scan QR code to mark attendance
-Automatic attendance record storage
-Prevent duplicate attendance
+### Backend
+- Java (Servlet, JSP)
 
-Assignment Module
-Students submit assignments online
-Teachers upload assignments
-Notification for deadlines
+### Database
+- MySQL
 
-Leave Management Module
-Students apply leave online
-Teachers approve or reject leave request
-Leave status tracking
 
-Report Module
-Attendance report generation
-Performance report generation
-Summary reports
-Database Information
+### Tools
+- Eclipse IDE
+- Apache Tomcat 9
+- MySQL Workbench
+- JDK 8
 
+
+## Modules
+
+### QR Code Generation
+Each student receives a unique QR code linked to their profile.
+
+### QR Code Scanning
+QR code is scanned to mark attendance and validate student data.
+
+### Attendance Management
+Stores attendance records automatically and securely.
+
+### Assignment Management
+Students can submit assignments digitally.
+
+### Leave Management
+Students can apply for leave and teachers can approve or reject requests.
+
+### Reports
+Generate attendance reports and performance reports.
+
+
+## Database
 Database Name: student-system
 
-Tables included:
-students
-teachers
-parents
-attendance
-assignments
-leave_requests
+Tables:
+- students
+- teachers
+- parents
+- attendance
+- assignments
+- leave_requests
 
-Installation and Setup
-Requirements
-JDK 8
-Eclipse IDE
-Apache Tomcat 9
-MySQL Workbench
-Steps to Run Project
-Import project in Eclipse IDE
-Configure Apache Tomcat 9 server
-Create database in MySQL Workbench
-Import database tables
-Update database username and password in project files
 
-Run project on Tomcat server
+## Installation Steps
+
+1. Install JDK 8
+2. Install Eclipse IDE
+3. Install Apache Tomcat 9
+4. Install MySQL Workbench
+5. Import project in Eclipse
+6. Configure Tomcat Server
+7. Create database in MySQL Workbench
+8. Run project on server
+
 Open browser and run:
+
 http://localhost:8080/project-name
 
-Future Enhancements
-Mobile application support
-Face recognition attendance system
-Cloud database integration
-Email and SMS notification system
-Advanced dashboard with analytics
+
+## Conclusion
+This system provides an efficient and accurate way to manage attendance digitally. It reduces manual work, improves accuracy, and enhances communication between teachers, students, and parents.
